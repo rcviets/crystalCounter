@@ -5,6 +5,10 @@ $(document).ready(function() {
 //generate round specific button values
 
 //button onclick events
+$(".col-md-3").on("click", function(){
+
+    console.log("click")
+});
 
 //update the score counter
 
