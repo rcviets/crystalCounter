@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    //global variables
+    var playerScore = [];
+
+
     //generate random winning number
     var winningNum = [];
 
@@ -16,13 +20,27 @@ $(document).ready(function () {
     var btn4 = Math.floor(Math.random() * (12 - 1) + 1);
 
     console.log(btn1, btn2, btn3, btn4)
-    //button onclick events
-    $(".col-md-3").on("click", function () {
 
-        console.log("click")
+    //button onclick events & score counter
+    $("#btn1").on("click", function () {
+        playerScore = parseInt(playerScore + btn1);
+        $("#score").text(playerScore);
     });
 
-    //update the score counter
+    $("#btn2").on("click", function () {
+        playerScore = parseInt(playerScore + btn2);
+        $("#score").text(playerScore);
+    });
+
+    $("#btn3").on("click", function () {
+        playerScore = parseInt(playerScore + btn3);
+        $("#score").text(playerScore);
+    });
+
+    $("#btn4").on("click", function () {
+        playerScore = parseInt(playerScore + btn4);
+        $("#score").text(playerScore);
+    });
 
     //check for a win (if score and winning number match)
 
