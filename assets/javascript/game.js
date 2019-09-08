@@ -2,11 +2,12 @@ $(document).ready(function () {
 
     //global variables
     var playerScore = [];
+    var winningNum = [];
+    var wins = [];
+    var losses = [];
 
 
     //generate random winning number
-    var winningNum = [];
-
     function getRandomArbitrary(min, max) {
         winningNum = Math.floor(Math.random() * (121 - 19) + 19);
         $("#winningNum").text(winningNum);
@@ -42,9 +43,20 @@ $(document).ready(function () {
         $("#score").text(playerScore);
     });
 
-    //check for a win (if score and winning number match)
-
-    //check for a loss (if score is greater than winning number)
+    //check for a win or loss
+    function endGame() {
+        if (playerScore === winningNum) {
+            wins++
+           // reset()
+            $("#win").text(wins);
+        }
+        else {
+            losses++
+           // reset()
+            $("#loss").text(losses);
+        }
+    }
+    endGame()
 
     //game reset
 
