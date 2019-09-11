@@ -44,6 +44,7 @@ $(document).ready(function () {
             playerScore = parseInt(playerScore + btn4);
             $("#score").text(playerScore);
             endGame();
+            console.log(btn4)
         });
     }
 

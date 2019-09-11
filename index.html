@@ -8,22 +8,32 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body background="#">
+<body background="assets/images/background.jpg">
 
     <div class="container">
-        <h1 class="display-4 text-center font-weight-bold">Play Crystal Counter</h1>
+        <h2 class="display-4 text-center font-weight-bold">Play Crystal Counter</h2>
         <p class="lead text-center">Each Crystal is worth a specific number of points!</p>
         <p class="lead text-center">Match your score with the winning number!</p>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-12" id="winningNum">
-                <!--Winning Number-->
+            <div class="col-md-12 text-center">
+                <h3>Number to Guess</h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12" id="score">
+            <div class="col-md-12 text-center" id="winningNum">
+                <!-- Winning Number-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Current Score</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center" id="score">
                 <!--Player Score-->
             </div>
         </div>
@@ -43,11 +53,19 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6" id="win">
-            <!-- Wins -->
+        <div class="col-md-6 text-right">
+            <h4>Wins:</h4>
+        </div>
+        <div class="col-md-6">
+            <h4>Losses:</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 text-right" id="win">
+            <!-- Player Wins -->
         </div>
         <div class="col-md-6" id="loss">
-            <!--Losses -->
+            <!-- Player Losses -->
         </div>
     </div>
 

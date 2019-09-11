@@ -1,0 +1,33 @@
+h2 {
+    color:  rgb(233, 10, 214);
+}
+p {
+    color: aqua;
+    font-weight: bolder;
+}
+h3 {
+    color: yellow;
+}
+#winningNum {
+    font-weight: bold;
+    font-size: 20px;
+    color: yellow;
+}
+#score {
+    font-weight: bold;
+    font-size: 20px;
+    color: yellow;
+}
+h4 {
+    color: rgb(13, 9, 75);
+}
+#win {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(13, 9, 75);
+}
+#loss {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(13, 9, 75);
+}
